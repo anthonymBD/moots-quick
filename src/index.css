@@ -1,0 +1,112 @@
+@import 'tailwindcss';
+
+@theme {
+ --dark-blue:#00081C;
+ --sans: "Montserrat"
+ --serif: "Baskerville"
+}
+
+
+@utility flex-center {
+  @apply flex justify-center items-center;
+}
+
+@utility col-center {
+  @apply flex flex-col justify-center items-center;
+}
+
+h1{font-size:48px;}
+h2{ font-size:40px;}
+h3{font-size:36px; }
+h4 {font-size:28px;}
+
+.review-badge{
+ 
+}
+
+.hero-text {
+  font-family: var(--font-sans);
+  color: var(--dark-blue);
+}
+
+.hero-title {
+  font-family: var(--font-serif);
+  color: var(--dark-blue);
+}
+
+.hero-subtext {
+  font-family: var(--font-sans);
+}
+
+.hero-btn {
+  background-color: var(--dark-blue);
+  color: white;
+  border: none;
+}
+
+.hero-btn.hovered {
+  @apply shadow-lg -translate-y-0.5;
+}
+
+.hero-note {
+  color: var(--dark-blue);
+}
+
+.hero-image {
+  border-radius: 1.5rem;
+}
+
+.hero-link {
+  text-decoration-thickness: 2px;
+}
+
+.hero-badge {
+  font-family: var(--font-sans);
+}
+
+
+/* REVIEW BADGE */
+.review-badge {
+  font-family: var(--font-sans);
+  color: var(--dark-blue);
+
+  z-index: 10;
+}
+
+/* Smooth hover effect */
+.review-badge:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 8, 28, 0.15);
+}
+
+.review-badge-link {
+  color: var(--dark-blue);
+  text-decoration-thickness: 2px;
+}
+
+/* Position overlap only on desktop */
+@media (min-width: 768px) {
+  .review-badge {
+  bottom: 12rem;
+    left: -3rem;
+    background: white;
+    padding: 12px 18px;
+    @apply rounded-md;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+    align-items: center;
+    z-index: 30;
+    min-Width: 220px;
+  }
+}
+
+/* Center and scale for mobile */
+@media (max-width: 767px) {
+  .review-badge {
+    @apply px-3 py-1.5 text-sm justify-center;
+    position: static;
+    /* naturally flow below image */
+    margin-top: 1rem;
+  }
+}
+
+
