@@ -1,9 +1,23 @@
-import Hero from "./components/Hero"
+import React, { useEffect } from "react";
+import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
+import Home from "./pages/Home.jsx";
 
 const App = () => {
   return (
     <main>
- <Hero />
+
+      <Router>
+
+
+
+
+        <Routes>
+          <Route path="/" element={<Home />} />
+
+        </Routes>
+
+
+      </Router>
     </main>
   )
 }
