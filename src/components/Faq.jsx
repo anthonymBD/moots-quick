@@ -63,14 +63,14 @@ export default function FAQ() {
                         Got Questions?
                         <span className="w-6 h-px bg-stone-300" />
                     </span>
-                    <h2 className="text-[#00081C] text-2xl sm:text-3xl lg:text-4xl font-bold">
+                    <h2 className="text-dark-blue text-2xl sm:text-3xl lg:text-4xl font-bold">
                         Frequently Asked Questions
                     </h2>
                     <p className="text-stone-500 text-base mt-3 max-w-lg mx-auto">
                         Everything you need to know about Moot's pet beds. Can't find your answer?{" "}
                         <a
                             href="mailto:help@moots.pet"
-                            className="text-[#00081C] font-semibold underline underline-offset-2 hover:opacity-70 transition-opacity"
+                            className="text-dark-blue font-semibold underline underline-offset-2 hover:opacity-70 transition-opacity"
                         >
                             Email us
                         </a>.
@@ -83,9 +83,9 @@ export default function FAQ() {
                         <AccordionItem
                             key={i}
                             value={`item-${i}`}
-                            className="rounded-2xl border border-stone-100 bg-white px-5 shadow-sm data-[state=open]:border-[#00081C]/20 data-[state=open]:shadow-md transition-all duration-200"
+                            className="rounded-2xl border border-stone-100 bg-white px-5 shadow-sm data-[state=open]:border-dark-blue/20 data-[state=open]:shadow-md transition-all duration-200"
                         >
-                            <AccordionTrigger className="text-left text-sm sm:text-base font-semibold text-[#00081C] hover:no-underline py-4">
+                            <AccordionTrigger className="text-left text-sm sm:text-base font-semibold text-dark-blue hover:no-underline py-4">
                                 {faq.q}
                             </AccordionTrigger>
                             <AccordionContent className="text-stone-500 text-sm sm:text-base leading-relaxed pb-5">
@@ -99,12 +99,12 @@ export default function FAQ() {
                 <div className="mt-10 text-center">
                     <div className="inline-flex flex-col sm:flex-row items-center gap-4 bg-white border border-stone-100 rounded-2xl px-8 py-6 shadow-sm w-full sm:w-auto">
                         <div className="text-left">
-                            <p className="text-[#00081C] font-bold text-sm">Still have questions?</p>
+                            <p className="text-dark-blue font-bold text-sm">Still have questions?</p>
                             <p className="text-stone-500 text-xs mt-0.5">Our team is happy to help.</p>
                         </div>
                         <Button
                             asChild
-                            className="shrink-0 bg-[#00081C] text-white font-bold text-sm px-6 py-3 rounded-xl hover:bg-[#0a1628] active:scale-95 transition-all duration-200 w-full sm:w-auto"
+                            className="shrink-0 bg-dark-blue text-white font-bold text-sm px-6 py-3 rounded-xl hover:bg-[#0a1628] active:scale-95 transition-all duration-200 w-full sm:w-auto"
                         >
                             <a href="mailto:help@moots.pet">Contact Us</a>
                         </Button>

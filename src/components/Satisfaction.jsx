@@ -27,7 +27,7 @@ const features = [
 
 const Satisfaction = () => {
     return (
-        <section className="bg-[#00081C] py-16 px-4 sm:px-8">
+        <section className="bg-dark-blue py-16 px-4 sm:px-8">
             {/* Heading */}
             <h2 className="text-white text-2xl sm:text-3xl lg:text-4xl font-bold text-center max-w-3xl mx-auto mb-12 leading-tight">
                 Why Moot's Pet Beds Are the Best Choice for Your Pet (And Your Home)
@@ -48,7 +48,7 @@ const Satisfaction = () => {
                             />
                         </div>
                         <div className="p-6 flex flex-col gap-3 flex-1">
-                            <h3 className="text-[#00081C] text-lg font-bold">
+                            <h3 className="text-dark-blue text-lg font-bold">
                                 {feature.title}
                             </h3>
                             <p className="text-gray-700 text-sm leading-relaxed">
@@ -73,7 +73,7 @@ const Satisfaction = () => {
 
             {/* CTA Button */}
             <div className="flex justify-center">
-                <Button size="lg" className="bg-white text-[#00081C] hover:text-[#00081C] font-bold text-base sm:text-lg px-8 py-6 rounded-2xl hover:bg-gray-100 active:scale-95 transition-all duration-200 shadow-md">
+                <Button size="lg" className="bg-white text-dark-blue hover:text-dark-blue font-bold text-base sm:text-lg px-8 py-6 rounded-2xl hover:bg-gray-100 active:scale-95 transition-all duration-200 shadow-md">
                     See the Difference — Find Out
                 </Button>
             </div>

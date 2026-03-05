@@ -38,7 +38,7 @@ export default function UvsThemSection() {
                         The Difference Is Clear
                         <span className="w-6 h-px bg-stone-300" />
                     </span>
-                    <h2 className="text-[#00081C] text-2xl sm:text-3xl lg:text-4xl font-bold">
+                    <h2 className="text-dark-blue text-2xl sm:text-3xl lg:text-4xl font-bold">
                         Moots vs. The Rest
                     </h2>
                 </div>
@@ -55,7 +55,7 @@ export default function UvsThemSection() {
                                 className="w-full h-full object-cover"
                             />
                             {/* Floating badge */}
-                            <div className="absolute top-4 left-4 bg-[#00081C] text-white text-xs font-bold px-3 py-1.5 rounded-full tracking-wide">
+                            <div className="absolute top-4 left-4 bg-dark-blue text-white text-xs font-bold px-3 py-1.5 rounded-full tracking-wide">
                                 Moot's Choice
                             </div>
                         </div>
@@ -70,7 +70,7 @@ export default function UvsThemSection() {
                                 {/* Feature label col */}
                                 <div className="bg-stone-50 px-5 py-3 border-b border-stone-100" />
                                 {/* Moots col header */}
-                                <div className="bg-[#00081C] px-6 py-3 border-b border-[#00081C] text-center min-w-[90px]">
+                                <div className="bg-dark-blue px-6 py-3 border-b border-dark-blue text-center min-w-[90px]">
                                     <span className="text-white text-sm font-bold tracking-wide">Moot's</span>
                                 </div>
                                 {/* Others col header */}
@@ -88,10 +88,10 @@ export default function UvsThemSection() {
                                 >
                                     {/* Label */}
                                     <div className="px-5 py-4">
-                                        <span className="text-[#00081C] text-sm font-medium">{f.label}</span>
+                                        <span className="text-dark-blue text-sm font-medium">{f.label}</span>
                                     </div>
                                     {/* Moots cell — highlighted */}
-                                    <div className="bg-[#00081C]/5 px-6 py-4 min-w-[90px] border-l border-r border-[#00081C]/10">
+                                    <div className="bg-dark-blue/5 px-6 py-4 min-w-[90px] border-l border-r border-dark-blue/10">
                                         {f.moots ? <Check /> : <Cross />}
                                     </div>
                                     {/* Others cell */}
@@ -106,9 +106,9 @@ export default function UvsThemSection() {
                         {/* CTA below table */}
                         <div className="mt-6 flex flex-col sm:flex-row gap-3 items-center justify-between">
                             <p className="text-stone-500 text-sm">
-                                <span className="font-semibold text-[#00081C]">7 reasons</span> to choose Moot's over the rest.
+                                <span className="font-semibold text-dark-blue">7 reasons</span> to choose Moot's over the rest.
                             </p>
-                            <button className="w-full sm:w-auto bg-[#00081C] text-white font-bold text-sm px-6 py-3.5 rounded-2xl hover:bg-[#0a1628] active:scale-95 transition-all duration-200 shadow-md">
+                            <button className="w-full sm:w-auto bg-dark-blue text-white font-bold text-sm px-6 py-3.5 rounded-2xl hover:bg-[#0a1628] active:scale-95 transition-all duration-200 shadow-md">
                                 Shop Best Sellers →
                             </button>
                         </div>

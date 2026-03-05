@@ -74,7 +74,7 @@ function ReviewText({ text }) {
             {isLong && (
                 <button
                     onClick={() => setExpanded(!expanded)}
-                    className="text-[#00081C] font-semibold underline underline-offset-2 hover:opacity-70 transition-opacity whitespace-nowrap"
+                    className="text-dark-blue font-semibold underline underline-offset-2 hover:opacity-70 transition-opacity whitespace-nowrap"
                 >
                     {expanded ? "Show less" : "Read more"}
                 </button>
@@ -108,18 +108,18 @@ export default function Testimonials() {
 
                     {/* LEFT COLUMN */}
                     <div className="flex-shrink-0 lg:w-80 xl:w-96">
-                        <h2 className="text-[#00081C] text-2xl sm:text-3xl font-bold leading-tight mb-6">
+                        <h2 className="text-dark-blue text-2xl sm:text-3xl font-bold leading-tight mb-6">
                             Don't Just Take Our Word for It—See Why Pet Owners Love Moot's Beds
                         </h2>
 
                         {/* Rating */}
                         <div className="flex items-center gap-3 mb-8 p-3 border border-gray-100 rounded-xl w-fit">
-                            <div className="w-8 h-8 rounded-full bg-[#00081C] flex items-center justify-center text-white text-xs font-bold shrink-0">
+                            <div className="w-8 h-8 rounded-full bg-dark-blue flex items-center justify-center text-white text-xs font-bold shrink-0">
                                 M
                             </div>
                             <div className="flex flex-col">
                                 <div className="flex items-center gap-2">
-                                    <span className="font-bold text-[#00081C] text-sm">4.6</span>
+                                    <span className="font-bold text-dark-blue text-sm">4.6</span>
                                     <div className="flex gap-0.5">
                                         {[1, 2, 3, 4, 5].map(i => (
                                             <svg key={i} className={`w-4 h-4 ${i <= 4 ? "text-orange-400" : "text-gray-200"}`} fill="currentColor" viewBox="0 0 20 20">
@@ -128,7 +128,7 @@ export default function Testimonials() {
                                         ))}
                                     </div>
                                 </div>
-                                <button className="text-xs text-[#00081C] underline underline-offset-2 text-left mt-0.5 hover:opacity-70 transition-opacity">
+                                <button className="text-xs text-dark-blue underline underline-offset-2 text-left mt-0.5 hover:opacity-70 transition-opacity">
                                     Read our 1,466 reviews
                                 </button>
                             </div>
@@ -136,7 +136,7 @@ export default function Testimonials() {
 
                         {/* As Seen On */}
                         <div className="mb-8">
-                            <p className="text-[#00081C] font-bold text-lg mb-4">As seen on:</p>
+                            <p className="text-dark-blue font-bold text-lg mb-4">As seen on:</p>
                             <div className="grid grid-cols-2 gap-x-6 gap-y-5">
                                 {retailers.map((r) => (
                                     <div key={r.name} className="flex items-center justify-start h-9">
@@ -147,7 +147,7 @@ export default function Testimonials() {
                         </div>
 
                         {/* CTA */}
-                        <button className="w-full sm:w-auto bg-[#00081C] text-white font-bold text-base px-8 py-4 rounded-2xl hover:bg-[#001a3a] active:scale-95 transition-all duration-200">
+                        <button className="w-full sm:w-auto bg-dark-blue text-white font-bold text-base px-8 py-4 rounded-2xl hover:bg-[#001a3a] active:scale-95 transition-all duration-200">
                             See Testimonials
                         </button>
                     </div>
@@ -157,7 +157,7 @@ export default function Testimonials() {
                         <div className="flex justify-end gap-3 mb-4">
                             <button
                                 onClick={() => swiperRef.current?.slidePrev()}
-                                className="w-11 h-11 rounded-full bg-[#00081C] text-white flex items-center justify-center hover:bg-[#001a3a] active:scale-95 transition-all"
+                                className="w-11 h-11 rounded-full bg-dark-blue text-white flex items-center justify-center hover:bg-[#001a3a] active:scale-95 transition-all"
                                 aria-label="Previous"
                             >
                                 <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth={2.5} viewBox="0 0 24 24">
@@ -166,7 +166,7 @@ export default function Testimonials() {
                             </button>
                             <button
                                 onClick={() => swiperRef.current?.slideNext()}
-                                className="w-11 h-11 rounded-full bg-[#00081C] text-white flex items-center justify-center hover:bg-[#001a3a] active:scale-95 transition-all"
+                                className="w-11 h-11 rounded-full bg-dark-blue text-white flex items-center justify-center hover:bg-[#001a3a] active:scale-95 transition-all"
                                 aria-label="Next"
                             >
                                 <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth={2.5} viewBox="0 0 24 24">
@@ -192,7 +192,7 @@ export default function Testimonials() {
                                             <Stars count={r.stars} />
                                             <ReviewText text={r.text} />
                                             <div className="flex items-center justify-between pt-3 border-t border-gray-100">
-                                                <span className="font-bold text-[#00081C] text-sm">{r.name}</span>
+                                                <span className="font-bold text-dark-blue text-sm">{r.name}</span>
                                                 <span className="flex items-center gap-1.5 text-xs text-orange-500 font-medium">
                                                     <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
                                                         <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />

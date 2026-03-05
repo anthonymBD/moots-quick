@@ -1,22 +1,20 @@
 import React, { useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import Home from "./pages/Home.jsx";
+import Navbar from "./components/Navbar.jsx";
+import Footer from "./components/Footer.jsx";
 
 const App = () => {
   return (
-    <main>
-
+    <main className="min-h-screen flex flex-col">
       <Router>
-
-
-
-
-        <Routes>
-          <Route path="/" element={<Home />} />
-
-        </Routes>
-
-
+        <Navbar />
+        <div className="flex-grow">
+          <Routes>
+            <Route path="/" element={<Home />} />
+          </Routes>
+        </div>
+        <Footer />
       </Router>
     </main>
   )

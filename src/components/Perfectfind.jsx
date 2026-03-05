@@ -65,7 +65,7 @@ export default function PerfectFind() {
             <div className="max-w-6xl mx-auto">
                 {/* Header */}
                 <div className="text-center mb-10">
-                    <h2 className="text-[#00081C] text-2xl sm:text-3xl lg:text-4xl font-bold mb-3">
+                    <h2 className="text-dark-blue text-2xl sm:text-3xl lg:text-4xl font-bold mb-3">
                         Find the Perfect Bed for Your Pet
                     </h2>
                     <p className="text-gray-600 text-base sm:text-lg max-w-2xl mx-auto">
@@ -97,8 +97,8 @@ export default function PerfectFind() {
                                         aria-label={`Select ${s.key} size`}
                                         aria-pressed={active === i}
                                         className={`w-12 h-12 rounded-full font-bold text-sm transition-all duration-200 shadow-lg focus:outline-none ${active === i
-                                            ? "bg-[#00081C] text-white scale-110 ring-2 ring-white"
-                                            : "bg-white text-[#00081C] hover:bg-gray-100"
+                                            ? "bg-dark-blue text-white scale-110 ring-2 ring-white"
+                                            : "bg-white text-dark-blue hover:bg-gray-100"
                                             }`}
                                     >
                                         {s.key}
@@ -113,7 +113,7 @@ export default function PerfectFind() {
                         <div key={current.key} className="flex flex-col gap-5">
 
                             <div>
-                                <h3 className="text-[#00081C] text-2xl sm:text-3xl font-bold leading-tight mb-1">
+                                <h3 className="text-dark-blue text-2xl sm:text-3xl font-bold leading-tight mb-1">
                                     {current.name}
                                 </h3>
                                 <p className="text-gray-500 text-sm">{current.breeds}</p>
@@ -123,7 +123,7 @@ export default function PerfectFind() {
                             <div className="bg-white rounded-2xl p-4 border border-gray-100 shadow-sm">
                                 <div className="flex items-center justify-between mb-2">
                                     <span className="text-xs font-semibold text-gray-500 uppercase tracking-wide">Bed size</span>
-                                    <span className="text-xs font-bold text-[#00081C]">
+                                    <span className="text-xs font-bold text-dark-blue">
                                         {current.w}" × {current.d}" × {current.h}"
                                     </span>
                                 </div>
@@ -131,7 +131,7 @@ export default function PerfectFind() {
                                 {/* Bar track */}
                                 <div className="relative h-3 bg-gray-100 rounded-full overflow-hidden">
                                     <div
-                                        className="h-full bg-[#00081C] rounded-full transition-all duration-500 ease-out"
+                                        className="h-full bg-dark-blue rounded-full transition-all duration-500 ease-out"
                                         style={{ width: `${current.barWidth}%` }}
                                     />
                                 </div>
@@ -141,7 +141,7 @@ export default function PerfectFind() {
                                     {sizes.map((s, i) => (
                                         <span
                                             key={s.key}
-                                            className={`text-xs font-bold transition-colors duration-200 ${active === i ? "text-[#00081C]" : "text-gray-300"
+                                            className={`text-xs font-bold transition-colors duration-200 ${active === i ? "text-dark-blue" : "text-gray-300"
                                                 }`}
                                         >
                                             {s.key}
@@ -151,7 +151,7 @@ export default function PerfectFind() {
 
                                 {/* Weight range under bar */}
                                 <p className="text-xs text-gray-500 mt-2 text-center">
-                                    Best for dogs <span className="font-semibold text-[#00081C]">{current.weight}</span>
+                                    Best for dogs <span className="font-semibold text-dark-blue">{current.weight}</span>
                                 </p>
                             </div>
 
@@ -167,7 +167,7 @@ export default function PerfectFind() {
                                 ))}
                             </ul>
 
-                            <button className="w-full bg-[#00081C] text-white font-bold text-base py-4 rounded-2xl hover:bg-[#001a3a] active:scale-95 transition-all duration-200">
+                            <button className="w-full bg-dark-blue text-white font-bold text-base py-4 rounded-2xl hover:bg-[#001a3a] active:scale-95 transition-all duration-200">
                                 {current.cta}
                             </button>
 

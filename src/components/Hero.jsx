@@ -19,13 +19,13 @@ export default function Hero({ onDemoClick }) {
                         </span>
 
                         {/* Headline — large, confident, no gimmicks */}
-                        <h1 className="text-[#00081C] text-4xl sm:text-5xl lg:text-[3.25rem] font-bold leading-[1.15] tracking-tight">
+                        <h1 className="text-dark-blue text-4xl sm:text-5xl lg:text-[3.25rem] font-bold leading-[1.15] tracking-tight">
                             For the Dog Who's Always Been by Your Side —
                             <br className="hidden sm:block" />
                             <span className="relative inline-block mt-1">
                                 <span className="relative z-10">Now They Sleep Like Royalty.</span>
                                 {/* Warm underline accent */}
-                                <span className="absolute bottom-1 left-0 right-0 h-[3px] bg-amber-400 rounded-full opacity-60" />
+                                <span className="absolute bottom-1 left-0 right-0 h-[3px] bg-dark-blue rounded-full " />
                             </span>
                         </h1>
 
@@ -40,7 +40,7 @@ export default function Hero({ onDemoClick }) {
                             <Button
                                 size="lg"
                                 onClick={onDemoClick}
-                                className="bg-[#00081C] text-white font-semibold text-base px-8 py-6 rounded-2xl hover:bg-[#0a1628] active:scale-[0.98] transition-all duration-200 shadow-md tracking-wide"
+                                className="bg-dark-blue text-white font-semibold text-base px-8 py-6 rounded-2xl hover:bg-[#0a1628] active:scale-[0.98] transition-all duration-200 shadow-md tracking-wide"
                             >
                                 Find My Dog's Size
                             </Button>
@@ -48,7 +48,7 @@ export default function Hero({ onDemoClick }) {
                                 size="lg"
                                 variant="outline"
                                 asChild
-                                className="border-stone-200 text-[#00081C] font-semibold text-base px-6 py-6 rounded-2xl hover:bg-stone-50 hover:border-stone-300 transition-all duration-200 tracking-wide"
+                                className="border-stone-200 text-dark-blue font-semibold text-base px-6 py-6 rounded-2xl hover:bg-stone-50 hover:border-stone-300 transition-all duration-200 tracking-wide"
                             >
                                 <a href="#reviews" className="flex items-center gap-2">
                                     Read Reviews
@@ -98,7 +98,7 @@ export default function Hero({ onDemoClick }) {
                             </div>
 
                             {/* Floating stat chip — top right */}
-                            <div className="absolute -top-4 -right-4 hidden sm:flex flex-col items-center justify-center bg-[#00081C] text-white rounded-2xl w-24 h-24 shadow-xl">
+                            <div className="absolute -top-4 -right-4 hidden sm:flex flex-col items-center justify-center bg-dark-blue text-white rounded-2xl w-24 h-24 shadow-xl">
                                 <span className="text-2xl font-bold leading-none">5K+</span>
                                 <span className="text-[10px] font-medium text-stone-300 uppercase tracking-wider mt-1 text-center leading-tight">Happy<br />Dogs</span>
                             </div>
